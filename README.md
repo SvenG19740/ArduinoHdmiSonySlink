@@ -17,6 +17,7 @@ The idea behind is that I have a legacy Sony AV Receiver (Sony STR-DB830) capabl
 
 To Do:
 - semi-professional PCB
+- translate schematic (partly German)
 - using an Arduino Nano instead of Mega
 - using the +5 V of the HDMI port instead of a power supply
 - housing
