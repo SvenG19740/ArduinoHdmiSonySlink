@@ -3,6 +3,8 @@ This repo is dedicated to control an AV Receiver from Sony via S-Link receiving 
 
 Build the hardware using some transistors, resistors, capacitors, a Arduino Mega, a HDMI breakout board and a 3,5 mm mono plug. Connect the mono plug to your Sony amplifier / receiver and the HDMI break-out board to your TV set. Depending on the HDMI port at the TV the address has to be configured in the code. If the Arduino gets recognized select "Arduino" as loudspeaker output. You need a power supply for the Arduino.
 
+Disclaimer: (will solve that later) I cannot remember exactly but I think I had to change the CEC library to get the code working. Will fix that soon and reply herein.
+
 What the code does:
 1) Register the Arduino as an Audio device on the CEC bus (HDMI) and allocate an address.
 2) Capture commands on the CEC bus as Power On, Power Off, Mute, Volume Up, Volume Down.
