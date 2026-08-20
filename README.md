@@ -13,12 +13,16 @@ What the code does:
 Result:
 You use your TV set remote control turning on the TV and the receiver gets powered on. If you change or mute the volume on the remote control the receiver changes the volume or mutes it.
 
-The idea behind is that I have a legacy Sony AV Receiver (Sony STR-DB830) capable receiving digital sound using the optical input and a TV set from Samsung with HDMI ports and opt-out for sound. I did not want to spend (again) money for a amplifier having HDMI ports. I do not want to use several remote controls. I do not want to use programmable remote controls. The concept sending IR codes to the amplifier I do not like since you have to place the IR diode somewhere. So my idea was to catch the signals on HDMI and use the Slink interface from Sony to control the receiver. I started with a Raspi because it has an HDMI port and a library capable reading CEC on HDMI. But I wanted to have it on the Arduino.
+The idea behind is that I have a legacy Sony AV Receiver (Sony STR-DB830) capable receiving digital sound using the optical input and a TV set from Samsung with HDMI ports and opt-out for sound. I did not want to spend (again) money for a amplifier having HDMI ports. I do not want to use several remote controls. I do not want to use programmable remote controls. The concept sending IR codes to the amplifier I do not like since you have to place the IR diode somewhere. So my idea was to catch the signals on HDMI and use the Slink interface from Sony to control the receiver. I started with a Raspi because it has an HDMI port and a library capable reading CEC on HDMI. But I wanted to have it on the Arduino (size / cost / power consumption).
 
+Currently the concept has been tested with Arduino Mega and Arduino Nano, connected to a Samsung LED TV via HDMI and a Sony Receiver STR-DB 830.
+
+Done:
+- using an Arduino Nano instead of Mega (20-Aug-2026)
+  
 To Do:
 - semi-professional PCB
 - translate schematic (partly German)
-- using an Arduino Nano instead of Mega
 - using the +5 V of the HDMI port instead of a power supply
 - housing
 - code optimization, e.g. deleting debug messages
