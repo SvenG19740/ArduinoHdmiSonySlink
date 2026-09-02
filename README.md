@@ -5,7 +5,7 @@ Build the hardware using some transistors, resistors, capacitors, a Arduino Mega
 
 Disclaimer: (will solve that later) I cannot remember exactly but I think I had to change the CEC library to get the code working. Will fix that soon and reply herein.
 
-What the code does:
+## What the code does:
 1) Register the Arduino as an Audio device on the CEC bus (HDMI) and allocate an address.
 2) Capture commands on the CEC bus as Power On, Power Off, Mute, Volume Up, Volume Down.
 3) Send appropriate commands to the Sony Slink interface.
@@ -17,11 +17,11 @@ The idea behind is that I have a legacy Sony AV Receiver (Sony STR-DB830) capabl
 
 Currently the concept has been tested with Arduino Mega and Arduino Nano, connected to a Samsung LED TV via HDMI and a Sony Receiver STR-DB 830.
 
-Done:
+## Done:
 - using an Arduino Nano instead of Mega (20-Aug-2026)
 - ~using the +5 V of the HDMI port instead of a power supply~ -> HDMI at TV set is a sink and not a source as e.g. BluRay player, therefore no +5 V available
 
-To Do:
+## To Do:
 - semi-professional PCB
 - use USB of TV set as power supply (means: code change to switch on amplifier as Arduino powers up)
 - translate schematic (partly German)
@@ -30,7 +30,7 @@ To Do:
 - code optimization, e.g. deleting debug messages
 - increasing robustness of the code
 
-Sources:
+## Sources:
 
 https://github.com/robho/sony_slink
 
