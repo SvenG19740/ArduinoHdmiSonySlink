@@ -19,11 +19,13 @@ Currently the concept has been tested with Arduino Mega and Arduino Nano, connec
 
 Done:
 - using an Arduino Nano instead of Mega (20-Aug-2026)
-  
+- ~using the +5 V of the HDMI port instead of a power supply~ -> HDMI at TV set is a sink and not a source as e.g. BluRay player, therefore no +5 V available
+
 To Do:
 - semi-professional PCB
+- use USB of TV set as power supply (means: code change to switch on amplifier as Arduino powers up)
 - translate schematic (partly German)
-- using the +5 V of the HDMI port instead of a power supply
+- use jumpers for the HDMI address
 - housing
 - code optimization, e.g. deleting debug messages
 - increasing robustness of the code
