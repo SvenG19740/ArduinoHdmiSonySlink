@@ -1,5 +1,5 @@
 # ArduinoHdmiSonySlink
-This repo is dedicated to control an AV Receiver from Sony via S-Link receiving the control signals from the HDMI port of the TV set.
+This repo is dedicated to control an AV Receiver from Sony via S-Link receiving the control signals from the HDMI port of the TV set decoding the CEC commands.
 
 Build the hardware using some transistors, resistors, capacitors, a Arduino Mega, a HDMI breakout board and a 3,5 mm mono plug. Connect the mono plug to your Sony amplifier / receiver and the HDMI break-out board to your TV set. Depending on the HDMI port at the TV the address has to be configured in the code. If the Arduino gets recognized select "Arduino" as loudspeaker output. You need a power supply for the Arduino.
 
